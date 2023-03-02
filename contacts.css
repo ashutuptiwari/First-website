@@ -39,8 +39,7 @@ main
 {
     background-color: beige;
     display:flex;
-    justify-content: space-around;
-    align-items:center;
+    justify-content:center;
     margin:50px;
     padding:100px;
     transition: all 1s ease;
@@ -59,11 +58,7 @@ main p,h2
 {
     height:30px;
     width:300px;
-    
 }
-
-
-
 label,input
 {
     display:block;
@@ -96,7 +91,7 @@ input
 form
 {   margin-top:0px;
     display:flex;
-    margin-right:auto;
+    margin-right:0px;
     padding:0px;
 }
 #form-grid input
@@ -106,11 +101,11 @@ form
 
 #info
 {
-    margin-top:0px; 
+    margin:0px 200px; 
 }
 #wholeform
 {
-    margin-right:;
+    margin-left:00px;
 }
 #msg
 {
@@ -140,7 +135,7 @@ footer
     align-items:baseline;
     padding:20px;
 }
-#insta,#LinkedIn
+#insta,#LinkedIn,#Github
 {
    
     height:20px;
