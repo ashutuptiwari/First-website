@@ -1,0 +1,91 @@
+header p,div
+{
+    display:inline-block;
+}
+#circle
+{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    background-color:lightcoral;
+}
+#name
+{
+    font-size:30px;
+    font-family:Garamond;
+    font-weight:bold;
+    margin:0px;
+}
+#job
+{
+    font-size:17px;
+    margin: 5px;
+}
+#links
+{
+    float:right;
+}
+header p,div
+{
+    margin-top:0px;
+}
+a
+{
+    text-decoration: none;
+    color:black;
+}
+main
+{   
+    transition:all 1s ease;
+    background-color:beige;
+    margin:50px;
+    padding:100px;
+    text-align:centre;
+    
+    
+}
+
+#projects
+{
+    font-size:50px;
+}
+#proj1name
+{
+    font-size:30px;
+}
+#proj1
+{
+    display:flex;
+    justify-content:center;
+}
+#proj1img
+{
+    height:200px;
+    margin-left:30px;
+}
+#projdes
+{
+   margin-right:30px; 
+}
+#summary
+{
+    
+}
+footer
+{
+    display:flex;
+   justify-content: center;
+    align-items:baseline;
+    padding:20px;
+}
+#insta,#LinkedIn
+{
+   
+    height:20px;
+    margin:0px 0px 0px 20px;
+    
+}
+footer p
+{
+    margin:0px;
+}

@@ -1,0 +1,121 @@
+header p,div
+{
+    display:inline-block;
+}
+#circle
+{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    background-color:lightcoral;
+}
+#name
+{
+    font-size:30px;
+    font-family:Garamond;
+    font-weight:bold;
+    margin:0px;
+}
+#job
+{
+    font-size:17px;
+    margin: 5px;
+}
+#links
+{
+    float:right;
+}
+header p,div
+{
+    margin-top:0px;
+}
+a 
+{
+  text-decoration: none; 
+    color:black;
+}
+main
+{
+    background-color:beige;
+}
+#section
+{
+    padding:50px;
+}
+#resume
+{
+    font-size:50px;
+    
+}
+#education,#skills
+{
+   display:flex; 
+    justify-content:space-around;
+    align-items:stretch;
+}
+#education,#skills
+{
+    margin:50px;
+}
+
+#heading
+{
+    font-size:40px;
+    margin:0px 300px 0px 100px;
+    
+}
+#sheading
+{
+    font-size:40px;
+    margin:0px 220px 0px 00px;
+}
+#sheading p
+{
+    margin-top:10px;
+}
+#heading p
+{
+    margin-top:10px
+}
+#part
+{
+    display:flex;
+    margin-top:0px;
+    padding-top:0px;
+}
+#Des
+{
+    margin-left:20px;
+}
+#Des b
+{
+    font-size:20px;
+}
+.slist
+{
+    margin-left:20px;
+}
+#part a:hover
+{
+    color:dodgerblue;
+    transition:all 1s ease;
+}
+footer
+{
+    display:flex;
+   justify-content: center;
+    align-items:baseline;
+    padding:20px;
+}
+#insta,#LinkedIn
+{
+   
+    height:20px;
+    margin:0px 0px 0px 20px;
+    
+}
+footer p
+{
+    margin:0px;
+}
+
