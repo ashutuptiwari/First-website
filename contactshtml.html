@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <link href="contacts.css" rel="stylesheet" type="text/css">
+    <head>
+        <link href="contacts.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+        <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    emailjs.init("qEXEJx4R0VjzPPu8S");
+
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const firstName = form.elements["fn"].value;
+      const lastName = form.elements["ln"].value;
+      const email = form.elements["email"].value;
+      const subject = form.elements["s"].value;
+      const message = form.elements["message"].value;
+
+      const data = {
+        from_name: firstName + " " + lastName,
+        from_email: email,
+        subject: subject,
+        message: message,
+      };
+
+      emailjs.send("service_ktsg0pk", "template_n7ejd8r", data)
+        .then(function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+        }, function(error) {
+          console.log("FAILED...", error);
+        });
+
+      form.reset();
+    });
+  });
+</script>
+
+
+    </head>
+    
     <body>
         <header>
            <div id="circle"></div>
@@ -19,16 +58,16 @@
         </section>
         <section id="wholeform">
             <section id="form-grid">
-            <form>
+            <form id="myForm">
                 <div id="nameC">
                 <label for="fn">First name:</label>
-                <input type="text" id="fn" name="fn">
+                <input type="text" id="fn" name="fn" required>
                 <label for="ln">Last name:</label>
                 <input type="text" id="ln" name="ln">
                 </div>
                 <div id="email">
                  <label for="em">Email:</label>
-                <input type="email" id="em" name="email">
+                <input type="email" id="em" name="email" required>
                 <label for="s">Subject:</label>
                 <input type="text" id="s" name="s">
                 </div>
@@ -36,7 +75,7 @@
             </section>
             <div id="msg">
             <label for id="message">Message:</label>
-            <textarea id="message" type="text" name="message">
+            <textarea id="message" type="text" name="message" required>
             </textarea>
             </div>
             
@@ -44,7 +83,7 @@
             <input id="submit" type="submit" value="Send" name="submit">
             </input>
             </form>
-            <p>Unfortunately, the form is still non-functional because of my woeful incompetence when it comes to learning PHP.<br> Unless I miraculously develop some coding skills, it will remain inoperable. If you happen to know of a good course that can help a hopeless case like me, please do share it. </p>
+           
             
         </section>
         </main>
