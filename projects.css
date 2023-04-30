@@ -50,23 +50,25 @@ main
     font-size:50px;
     font-family:cursive;
 }
-#proj1name
+#projname
 {
     font-size:30px;
+    font-weight:800;
 }
-#proj1
+#proj1,#proj2
 {
     display:flex;
     justify-content:center;
 }
-#proj1img
+#projimg
 {
     height:200px;
-    margin-left:30px;
+    width:350px;
+    
 }
 #projdes
 {
-   margin-right:30px; 
+   margin-right:auto;
 }
 #summary
 {
