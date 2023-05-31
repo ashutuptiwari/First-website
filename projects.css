@@ -52,7 +52,7 @@ main
 }
 #projname
 {
-    font-size:30px;
+    font-size:35px;
     font-weight:800;
 }
 #proj1,#proj2,#proj3
@@ -69,6 +69,7 @@ main
 #projdes
 {
    margin-right:auto;
+font-size:20px;
 }
 #summary
 {
